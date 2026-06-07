@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>And Chess For All</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">♟ And Chess For All</a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#puzzles">Daily Puzzle</a>
+      <a href="#leaderboards">Leaderboards</a>
+      <a href="#brandon">Brandon</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-frame">
+        <div>
+          <p class="eyebrow">A Chess.com community</p>
+          <h1>And Chess For All</h1>
+          <p class="subtitle">Building stronger players and lasting friendships, one move at a time.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="https://www.chess.com/club/and-chess-for-all-1/join" target="_blank">Join the Club</a>
+            <a class="btn" href="https://www.chess.com/member/DevilsGambit22" target="_blank">DevilsGambit22</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome section-pad" id="about">
+      <img class="crest" src="assets/fog-chess.jpeg" alt="Foggy chess pieces" />
+      <h2>Welcome</h2>
+      <p>And Chess For All is a welcoming club where players of every rating can learn, compete, improve, and enjoy the game together.</p>
+      <p class="latin">Gens una sumus</p>
+      <div class="member-goal">
+        <div class="goal-head"><span>Member Goal</span><strong id="member-count-label">Loading...</strong></div>
+        <div class="bar"><span id="member-progress"></span></div>
+        <small id="last-updated">Updating club data...</small>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div>
+        <h2>Every chess master was once a beginner.</h2>
+        <p>— Irving Chernev</p>
+      </div>
+      <img src="assets/hero-sunset-chess.jpeg" alt="Chess pieces at sunset" />
+    </section>
+
+    <section id="events" class="section-pad split-section">
+      <div>
+        <p class="eyebrow dark">Club Events</p>
+        <h2>Events, Matches & Tournaments</h2>
+        <p>The list below updates from public Chess.com club match data when the GitHub updater runs. Chess.com’s public API is read-only, because apparently websites enjoy making robots polite.</p>
+      </div>
+      <div class="event-links">
+        <a href="https://www.chess.com/club/and-chess-for-all-1/matches" target="_blank">Club Matches</a>
+        <a href="https://www.chess.com/club/and-chess-for-all-1/tournaments" target="_blank">Tournaments</a>
+        <a href="https://www.chess.com/club/and-chess-for-all-1/events" target="_blank">Club Events</a>
+      </div>
+      <div id="events-list" class="cards full"></div>
+    </section>
+
+    <section id="puzzles" class="section-pad puzzle-section">
+      <h2>Puzzle of the Day</h2>
+      <p>Daily puzzle provided by Shredder Chess.</p>
+      <div class="puzzle-frame">
+        <iframe src="https://www.shredderchess.com/online/daily-chess-puzzle.html" title="Shredder Chess Daily Puzzle"></iframe>
+      </div>
+      <a class="btn primary" href="https://www.shredderchess.com/online/daily-chess-puzzle.html" target="_blank">Open Shredder Puzzle</a>
+    </section>
+
+    <section id="leaderboards" class="section-pad">
+      <h2>Club Leaderboards</h2>
+      <p>Every public club member appears here after the updater collects ratings. Sorts by Rapid, Blitz, and Daily.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-board="rapid">Rapid</button>
+        <button class="tab" data-board="blitz">Blitz</button>
+        <button class="tab" data-board="daily">Daily</button>
+        <button class="tab" data-board="members">All Members</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead id="leaderboard-head"></thead>
+          <tbody id="leaderboard-body"><tr><td>Loading leaderboard...</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-pad grid-three">
+      <article>
+        <div class="icon">♟</div>
+        <h3>Community Events</h3>
+        <p>Friendly matches, club challenges, and open participation for all skill levels.</p>
+      </article>
+      <article>
+        <div class="icon">🏆</div>
+        <h3>Tournaments</h3>
+        <p>Compete, improve, and test your play in rated and unrated formats.</p>
+      </article>
+      <article>
+        <div class="icon">🧩</div>
+        <h3>Daily Practice</h3>
+        <p>Sharpen tactics with the Shredder daily puzzle and club discussion.</p>
+      </article>
+    </section>
+
+    <section id="brandon" class="memorial">
+      <div class="memorial-card">
+        <h2>Created in Memory of Brandon</h2>
+        <p><strong>DevilsGambit22</strong> began playing chess casually in 2019. In 2022, after meeting his late friend Brandon, he became more dedicated to studying and competing in the game.</p>
+        <p>And Chess For All was created in Brandon's memory with the hope of sharing chess knowledge, encouraging friendly competition, and helping players build lasting friendships through a game that brings people together across all backgrounds and skill levels.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>♟ And Chess For All · Recruitment Open</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
